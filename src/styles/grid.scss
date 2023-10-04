@@ -1,0 +1,72 @@
+
+.container {
+    width: 100%;
+    max-width: 1320px;
+    height: auto;
+    margin: 0 auto;
+    padding: 1rem 1.5rem;
+}
+
+.divSection {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    gap: 10px;
+    padding: 1rem;
+    background: var(--color-white);
+    margin-bottom: 1rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.financialResume {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+    .container {
+        width: 70%;
+        height: auto;
+        margin: 0 auto;
+        padding: 1rem 1.5rem;
+    }
+
+    .divSection {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+        border: 1px solid rgba(0, 0, 0, 0.20);
+        gap: 10px;
+        padding: 1rem;
+        background: var(--color-white);
+        margin-bottom: 1rem;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .financialResume {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+        margin: 0 auto;
+        gap: 1rem;
+    }
+}
