@@ -5,7 +5,8 @@ import { ProductList } from "../../components/ProductList";
 import { api } from "../../services/api";
 
 export const HomePage = ({addCart}) => {
-   const [productList, setProductList] = useState([]);   
+   const [productList, setProductList] = useState([]); 
+   //Efeito de montagem para fazer a requisição da API  
    useEffect(() => {
       const getProducts = async () => {
         const { data } = await api.get("products");

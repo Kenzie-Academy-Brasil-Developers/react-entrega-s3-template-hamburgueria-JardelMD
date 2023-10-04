@@ -6,14 +6,16 @@
     line-height: normal;
     color: var(--color-white);
 
+    display: flex;
     display: inline-flex;
-    align-items: center;
+    width: 454px;
+    height: 60px;
+    padding: 0px 20px;
     justify-content: center;
+    align-items: center;
+    gap: 10px;
     flex-shrink: 0;
-    gap: .625rem;
 
-    height: 3.75rem;
-    padding: 0 1.25rem;
 
     border-radius: 0.5rem;
     background: #BDBDBD;

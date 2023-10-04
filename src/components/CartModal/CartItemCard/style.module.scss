@@ -1,0 +1,44 @@
+.listProducts {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    // border: 1px solid red;
+}
+
+.divProduct {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: max-content;
+    // border: 1px solid red;
+    gap: 1rem;
+}
+
+.img {
+    width: 82.259px;
+    height: 80px;
+    flex-shrink: 0;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: var(--color-gray-100);
+}
+
+.namePrice {
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid red;
+    gap: 5px;
+}
+
+.buttonTrash {
+    flex-shrink: 0;
+    color: #BDBDBD;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}

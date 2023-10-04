@@ -16,7 +16,15 @@
 
 .title3 {
     @extend %title;
-    font-size:1.125rem;
+    font-size: 1.125rem;
+
+    &.white {
+        color: var(--color-white);
+    }
+
+    &.nowrap {
+        white-space: nowrap;
+    }
 }
 
 %text {
@@ -33,6 +41,12 @@
 .text2 {
     @extend %text;
     font-size: 0.875rem;
+
+    &.grey300 {
+        width: 79px;
+        flex-shrink: 0;
+        color: var(--color-gray-300);
+    }
 }
 
 .text3 {
@@ -41,7 +55,7 @@
 }
 
 
-.body-600{
+.body-600 {
     font-family: var(--font-family);
     font-weight: 600;
     color: var(--color-primary);
