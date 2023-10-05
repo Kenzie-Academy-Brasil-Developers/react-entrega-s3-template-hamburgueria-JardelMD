@@ -1,26 +1,24 @@
-.listProducts{
+.listProducts {
     width: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    height:auto;
+    height: auto;
     gap: 35px;
     margin: 1.75rem 0 1.8438rem 7.375rem;
 
 }
 
-@media (min-width:200px) and (max-width:1430px){
-    .listProducts{
+@media (min-width:200px) and (max-width:1430px) {
+    .listProducts {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         overflow-x: auto;
         align-items: center;
         height: auto;
-
         gap: 35px;
         margin: 20px 0 16.5px 27px;
     }
 }
-

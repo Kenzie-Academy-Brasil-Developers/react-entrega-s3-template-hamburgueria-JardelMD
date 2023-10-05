@@ -15,10 +15,15 @@
         background: var(--color-white);
     }
 
+    &:focus {
+        border-radius: 5px;
+        border: 2px solid var(--color-primary);
+        background: var(--color-white);
+    }
 }
 
-.cardImg{
-    display:flex;
+.cardImg {
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;

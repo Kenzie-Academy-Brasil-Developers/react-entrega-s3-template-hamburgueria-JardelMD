@@ -1,26 +1,24 @@
-import { useEffect, useState } from "react";
-import { CartModal } from "../../components/CartModal";
-import { Header } from "../../components/Header";
-import { ProductList } from "../../components/ProductList";
-import { api } from "../../services/api";
+import { useEffect, useState } from "react"
+import { Header } from "../../components/Header"
+import { ProductList } from "../../components/ProductList"
+import { api } from "../../services/api"
 
-export const HomePage = ({addCart}) => {
-   const [productList, setProductList] = useState([]); 
-   //Efeito de montagem para fazer a requisição da API  
+export const HomePage = ({ cartList, addCart, setIsOpen }) => {
+   const [productList, setProductList] = useState([])
+
    useEffect(() => {
       const getProducts = async () => {
-        const { data } = await api.get("products");
-        setProductList(data);
-      //   console.log(data);
+         const { data } = await api.get("products")
+         setProductList(data)
       }
-      getProducts();
-    }, [])
+      getProducts()
+   }, [])
    return (
       <>
-         <Header />
+         <Header cartList={cartList} setIsOpen={setIsOpen} />
          <main>
             <ProductList addCart={addCart} productList={productList} />
          </main>
       </>
-   );
-};
+   )
+}

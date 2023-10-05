@@ -1,12 +1,11 @@
 .listProducts {
-    width: 100%;
-    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    height: auto;
     padding: 10px;
-    // border: 1px solid red;
 }
 
 .divProduct {
@@ -14,15 +13,13 @@
     flex-direction: row;
     align-items: center;
     width: max-content;
-    // border: 1px solid red;
     gap: 1rem;
 }
 
 .img {
+    flex-shrink: 0;
     width: 82.259px;
     height: 80px;
-    flex-shrink: 0;
-    flex-shrink: 0;
     border-radius: 5px;
     background: var(--color-gray-100);
 }
@@ -30,7 +27,6 @@
 .namePrice {
     display: flex;
     flex-direction: column;
-    // border: 1px solid red;
     gap: 5px;
 }
 
